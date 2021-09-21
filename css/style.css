@@ -38,11 +38,76 @@
     background-color: mediumaquamarine;
 }
 
+/* box_sx */
 .box_sx {
     width: 35%;
     height: 100%;
     background-color: lightsalmon;
 }
+/* top */
+.box_sx_top {
+    width: 100%;
+    height: 25%;
+    background-color: limegreen;
+}
+
+.user {
+    width: 100%;
+    height: 35%;
+    background-color: red;
+}
+
+.notification_on {
+    width: 100%;
+    height: 40%;
+    background-color: green;
+}
+
+.search_chat {
+    width: 100%;
+    height: 25%;
+    background-color: blue;
+}
+/* /top */
+/* bottom */
+.box_sx_bottom {
+    width: 100%;
+    height: 45%;
+    background-color: brown;
+}
+
+.chats {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+.chat {
+    width: 100%;
+    height: 25%;
+    background-color: coral;
+    border: 1px solid;
+}
+/* /bottom */
+/* /box_sx */
+
+/* box_dx */
+.box_dx_top {
+
+}
+
+.box_dx_center {
+
+}
+
+.box_dx_bottom {
+
+}
+/* box_dx */
+
+
+
+
 
 .box_dx {
     width: 65%;
