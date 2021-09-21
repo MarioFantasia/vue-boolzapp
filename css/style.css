@@ -13,8 +13,6 @@
 }
 /* /common */
 
-
-
 /* container */
 .container {
     width: 100%;
@@ -36,231 +34,268 @@
     height: 100%;
 }
 
-/* box_sx */
-.box_sx {
-    width: 35%;
-    height: 100%;
-    background-color: white;
-}
-/* top */
-.box_sx_top {
-    width: 100%;
-    height: 25%;
-    background-color: #eaeaea;
-}
+/* BOX SINISTRA */
+    .box_sx {
+        width: 35%;
+        height: 100%;
+        background-color: white;
+    }
+    /* box sx top */
+    .box_sx_top {
+        width: 100%;
+        height: 25%;
+        background-color: #eaeaea;
+    }
 
-.user {
-    width: 100%;
-    height: 35%;
-    padding: 5px;
-    justify-content: space-between;
-}
+    /* box sx top: user */
+    .user {
+        width: 100%;
+        height: 35%;
+        padding: 5px;
+        justify-content: space-between;
+    }
 
+    .user_info {
+        width: 60%;
+        height: 100%;
+    }
 
-.user_info {
-    width: 60%;
-    height: 100%;
-}
+    .user_foto {
+        width: 40px;
+        height: 90%;
+        margin: auto 0;
+    }
 
-.user_foto {
-    width: 40px;
-    height: 90%;
-    margin: auto 0;
-}
+    .user_foto img {
+        width: 100%;
+        border-radius: 50%;
+    }
 
-.user_foto img {
-    width: 100%;
-    border-radius: 50%;
-}
+    .user_name {
+        margin: auto 0 auto 10px;
+        font-weight: 600;
+    }
 
-.user_name {
-    margin: auto 0 auto 10px;
-    font-weight: 600;
-}
+    .icons {
+        height: 100%;
+        text-align: center;
+    }
 
-/* .icons_user {
-    padding: 2px;
-    background-color: green;
-} */
+    .icons i {
+        color: #b1b1b1;
+        margin: auto 10px;
+    }
+    /* /box sx top: user */
 
-.icons {
-    height: 100%;
-    text-align: center;
-}
+    /* box sx top: notification on */
+    .notification_on {
+        width: 100%;
+        height: 40%;
+        background-color: #8edafc;
+    }
 
-.icons i {
-    color: #b1b1b1;
-    margin: auto 10px;
-}
+    .not_on_icon {
+        width: 40px;
+        height: 40px;
+        margin: auto 5px auto 10px;
+        background-color: white;
+        border-radius: 50%;
+    }
 
-.notification_on {
-    width: 100%;
-    height: 40%;
-    background-color: #8edafc;
-}
+    .not_on_icon i {
+        border-radius: 50%;
+        margin: auto;
+        color: #8edafc;
+    }
 
-.not_on_icon {
-    width: 40px;
-    height: 40px;
-    margin: auto 5px auto 10px;
-    background-color: white;
-    border-radius: 50%;
-}
+    .not_on_text {
+        margin: auto 0 auto 5px;
+    }
 
-.not_on_icon i {
-    border-radius: 50%;
-    margin: auto;
-    color: #8edafc;
-}
+    .not_on_text div:first-child {
+        font-weight: 600;
+    }
 
-.not_on_text {
-    margin: auto 0 auto 5px;
-}
+    .not_on_text div:last-child {
+        text-decoration: underline;
+        padding: 5px 0;
+        font-size: smaller;
+        color: #4f7485;
+    }
+    /* /box sx top: notification on */
 
-.not_on_text div:first-child {
-    font-weight: 600;
-}
+    /* box sx top: search */
+    .search_chat {
+        width: 100%;
+        height: 25%;
+        padding: 5px;
+        background-color: #fafafa;
+        color: #b6b9bb;
+    }
 
-.not_on_text div:last-child {
-    text-decoration: underline;
-    padding: 5px 0;
-    font-size: smaller;
-    color: #4f7485;
-}
+    .icon_search {
+        width: 20%;
+        background-color: white;
+    }
 
+    .icon_search i {
+        margin: auto;
+    }
 
-.search_chat {
-    width: 100%;
-    height: 25%;
-    padding: 5px;
-    background-color: #fafafa;
-    color: #b6b9bb;
-}
+    .search_input {
+        width: 80%;
+        height: 100%;
+        margin: auto auto auto 0;
+    }
 
-.icon_search {
-    width: 20%;
-    background-color: white;
-}
+    .search_input input {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+    /* /box sx top: search */
+    /* box sx top */
 
-.icon_search i {
-    margin: auto;
-}
+    /* box sx bottom */
+    .box_sx_bottom {
+        width: 100%;
+        height: 75%;
+        overflow-y: scroll;
+    }
 
-.search_input {
-    width: 80%;
-    height: 100%;
-    margin: auto auto auto 0;
-}
+    .chats {
+        width: 100%;
+        list-style: none;
+    }
 
-.search_input input {
-    width: 100%;
-    height: 100%;
-    border: none;
-}
+    .chat {
+        width: 100%;
+        height: 23%;
+        padding: 5px 0 5px 10px;
+        border-bottom: 2px solid #fafafa;
+        font-weight: 600;
+    }
 
-/* /top */
-/* bottom */
-.box_sx_bottom {
-    width: 100%;
-    height: 45%;
-    /* background-color: brown; */
-}
+    .contact_foto {
+        width: 15%;
+        margin: auto 0;
+        padding: 2px;
+    }
 
-.chats {
-    width: 100%;
-    height: 100%;
-    list-style: none;
-}
+    .contact_foto img {
+        width: 100%;
+        border-radius: 50%;
+    }
 
-.chat {
-    width: 100%;
-    height: 23%;
-    padding: 5px 0 5px 10px;
-    border-bottom: 2px solid #fafafa;
-    font-weight: 600;
-}
+    .name_contact {
+        margin: 5px 0 auto 10px;
+    }
+    /*/ box sx bottom */
+/* /BOX SINISTRA */
 
-.contact_foto {
-    width: 15%;
-    margin: auto 0;
-    padding: 2px;
-}
+/* BOX DESTRA */
+    .box_dx {
+        width: 65%;
+        height: 100%;
+    }
 
-.contact_foto img {
-    width: 100%;
-    border-radius: 50%;
-}
+    /* box dx top */
+    .box_dx_top {
+        width: 100%;
+        height: calc(9% - 1px);
+        background-color:#eaeaea;
+        border-left: 2px solid #d6d6d6;
+    }
+    /* box dx top: chat open */
+    .chat_open {
+        margin-right: auto;
+    }
 
-.name_contact {
-    margin: 5px 0 auto 10px;
-}
-/* /bottom */
-/* /box_sx */
+    .chat_open_foto {
+        width: 11%;
+        margin: auto 10px;
+    }
 
-/* box_dx */
-.box_dx {
-    width: 65%;
-    height: 100%;
-    background-color: lightskyblue;
-}
+    .chat_open_foto img {
+        width: 100%;
+        border-radius: 50%;
+    }
 
-.box_dx_top {
-    width: 100%;
-    height: calc(9% - 1px);
-    background-color:#eaeaea;
-    border-left: 2px solid #d6d6d6;
-}
+    .chat_open_info {
+        margin: auto 0;
+    }
 
-.chat_open {
-    margin-right: auto;
-}
+    .chat_open_info div:first-child {
+        font-weight: 600;
+    }
 
-.chat_open_foto {
-    width: 11%;
-    margin: auto 10px;
-}
+    .chat_open_info div:last-child {
+        padding-top: 2px;
+        font-size: small;
+        color: #6b7376;
+    }
 
-.chat_open_foto img {
-    width: 100%;
-    border-radius: 50%;
-}
+    .box_dx_icons {
+        margin: auto 10px;
+    }
 
-.chat_open_info {
-    margin: auto 0;
-}
+    .box_dx_icons i {
+        margin: auto 7px;
+        color: #b1b1b1;
+    }
+    /* /box dx top: chat open */
+    /* /box dx top */
 
-.chat_open_info div:first-child {
-    font-weight: 600;
-}
+    /* box center */
+    .box_dx_center {
+        width: 100%;
+        height: 82%;
+        background-image: url(../img/mine.jpg);
+        overflow-y: scroll;
+    }
+    /* /box center */
 
-.chat_open_info div:last-child {
-    padding-top: 2px;
-    font-size: small;
-    color: #6b7376;
-}
+    /* box dx bottom */
+    .box_dx_bottom {
+        width: 100%;
+        height: calc(9% + 1px);
+        padding: 8px;
+        background-color: #f3eeea;
+        color: #6b7376;
+    }
 
-.box_dx_icons {
-    margin: auto 10px;
-}
+    .emotic_icon {
+        width: 8%;
+    }
 
-.box_dx_icons i {
-    margin: auto 7px;
-    color: #b1b1b1;
-}
+    .emotic_icon i {
+        font-size: 20px;
+        margin: auto;
+    }
 
+    .write_message {
+        width: 84%;
+    }
 
-.box_dx_center {
-    width: 100%;
-    height: 82%;
-    background-color: brown;
-}
+    .write_message input {
+        width: 100%;
+        padding-left: 5px;
+        border: none;
+        border-radius: 5px;
+    }
 
-.box_dx_bottom {
-    width: 100%;
-    height: 9%;
-    background-color: goldenrod;
-}
-/* box_dx */
+    .audio_icon {
+        width: 8%;
+    }
+
+    .audio_icon i {
+        font-size: 20px;
+        margin: auto;
+    }
+    /* /box dx bottom */
+
+/* /BOX DESTRA */
+
 
 
 
