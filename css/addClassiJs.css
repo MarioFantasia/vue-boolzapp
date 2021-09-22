@@ -1,0 +1,12 @@
+/* classi gestite con il main.js */
+.mess_receive {
+    background-color: white;
+}
+
+.mess_sent {
+    background-color: #d5f9ba;
+}
+
+.flex_end {
+    justify-content: flex-end;
+}

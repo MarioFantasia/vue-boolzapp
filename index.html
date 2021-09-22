@@ -15,6 +15,7 @@
 
 
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/addClassiJs.css">
         <title>Vue Boolzapp</title>
     </head>
     <body>
@@ -89,9 +90,24 @@
                             </div>
                         </div>
 
-                        <div class="box_dx_center">                          
-                        </div> <!-- center -->
-
+                        <div class="box_dx_center">
+                            <div class="message_container flex"
+                                v-for="(message, index) in contacts[0].messages" :key="index"
+                                :class="message.status=='sent' ? 'flex_end' : ''">
+                                <div class="message c_flex"
+                                :class="message.status=='sent' ? 'mess_sent' : 'mess_receive'"> 
+                                    <p>{{message.message}}</p>
+                                    <div class="flex flex_end">{{message.date}}</div> 
+                                </div>
+                            </div>
+                            <!-- <div class="message_container flex">
+                                <div class="message mess_send c_flex">
+                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatibus magni pariatur qui animi accusamus eius eligendi beatae natus sequi sint inventore quidem quae blanditiis eaque, tempore molestias, totam distinctio.</p>
+                                    <div>22/09/2021</div>
+                                </div>
+                            </div> -->
+                        </div>
+                        
                         <div class="box_dx_bottom flex">
                             <div class="emotic_icon flex">
                                 <i class="far fa-smile"></i>
@@ -111,7 +127,6 @@
         <!-- VueJs -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
         <!-- /VueJs -->
-        <script src="js/contacts.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>
