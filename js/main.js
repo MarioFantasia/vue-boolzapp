@@ -172,11 +172,17 @@ const app = new Vue (
                 },
             ],
 
+            indexUser : 0,
+
+            bgcUseron : false
             
         },
 
         methods : {
-            
+            clickUser : function (index) {
+                this.indexUser = index;
+                return this.indexUser;
+            }
         }
     }
 );

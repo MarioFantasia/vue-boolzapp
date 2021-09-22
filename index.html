@@ -62,7 +62,8 @@
                         </div>
                     
                         <ul class="chats flex">
-                            <li class="chat flex" v-for="(contact, index) in contacts" :key="index">
+                            <li class="chat flex" v-for="(contact, index) in contacts" :key="index"
+                                @click = "clickUser(index)">
                                 <div class="contact_foto">
                                     <!-- per rendere dinamico src uso la concatenzazione -->
                                     <img :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name">
@@ -92,10 +93,10 @@
 
                         <div class="box_dx_center">
                             <div class="message_container flex"
-                                v-for="(message, index) in contacts[0].messages" :key="index"
+                                v-for="(message, index) in contacts[indexUser].messages" :key="index"
                                 :class="message.status=='sent' ? 'flex_end' : ''">
                                 <div class="message c_flex"
-                                :class="message.status=='sent' ? 'mess_sent' : 'mess_receive'"> 
+                                    :class="message.status=='sent' ? 'mess_sent' : 'mess_receive'"> 
                                     <p>{{message.message}}</p>
                                     <div class="flex flex_end">{{message.date}}</div> 
                                 </div>

@@ -10,3 +10,7 @@
 .flex_end {
     justify-content: flex-end;
 }
+
+.bgc_select_chat {
+    background-color: #e9ebeb;
+}
