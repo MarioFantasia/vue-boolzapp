@@ -200,7 +200,16 @@ const app = new Vue (
 
                     this.addMessage='';
                 }
-            }
-        }
+            },
+
+            receivedMessage : function(index) {
+                let tmpObj = {
+                    date : '23/09/2020 00:00:02',
+                    message : 'Ok',
+                    status : 'received'
+                }
+                this.contacts[index].messages.push(tmpObj);
+            }, 
+        },
     }
 );
