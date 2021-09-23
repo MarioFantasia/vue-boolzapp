@@ -63,9 +63,9 @@
                     
                         <ul class="chats flex">
                             <li class="chat flex" v-for="(contact, index) in contacts" :key="index"
+                                :class="indexUser==index ? 'bgc_select_chat' : ''"
                                 @click = "clickUser(index)">
                                 <div class="contact_foto">
-                                    <!-- per rendere dinamico src uso la concatenzazione -->
                                     <img :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name">
                                 </div>
                                 <div class="name_contact">{{contact.name}}</div> <!-- {{contacts[index].name}} -->
@@ -101,12 +101,6 @@
                                     <div class="flex flex_end">{{message.date}}</div> 
                                 </div>
                             </div>
-                            <!-- <div class="message_container flex">
-                                <div class="message mess_send c_flex">
-                                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatibus magni pariatur qui animi accusamus eius eligendi beatae natus sequi sint inventore quidem quae blanditiis eaque, tempore molestias, totam distinctio.</p>
-                                    <div>22/09/2021</div>
-                                </div>
-                            </div> -->
                         </div>
                         
                         <div class="box_dx_bottom flex">
