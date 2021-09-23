@@ -178,7 +178,7 @@ const app = new Vue (
 
             indexUser : 0,
 
-            bgcUseron : false
+            addMessage : '',
             
         },
 
@@ -186,6 +186,20 @@ const app = new Vue (
             clickUser : function (index) {
                 this.indexUser = index;
                 return this.indexUser;
+            },
+
+            sendMessage : function (index) {
+                if(this.addMessage!='') {
+                    let tmpObj = {
+                        date : '23/09/2020 00:00:00',
+                        message : this.addMessage,
+                        status : 'sent'
+                    }
+                    
+                    this.contacts[index].messages.push(tmpObj);
+
+                    this.addMessage='';
+                }
             }
         }
     }
