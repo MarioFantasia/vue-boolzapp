@@ -225,18 +225,19 @@ const app = new Vue (
                         (elm) => {
                         if(!(elm.name.toUpperCase().includes(this.searchChat.toUpperCase()))) {
                             elm.visible = false;
-                        } 
+                        } else {
+                            elm.visible = true;
+                        }
                     });
-                } else if(this.searchChat=='') {
+                }
+                if(this.searchChat=='') {
                     this.contacts.forEach(
                         (elm) => {
                             elm.visible = true;
                         }
                     );
-                }
+                } 
             }
         }
     }
 );
-
-
