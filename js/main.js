@@ -191,25 +191,32 @@ const app = new Vue (
             sendMessage : function (index) {
                 if(this.addMessage!='') {
                     let tmpObj = {
-                        date : '23/09/2020 00:00:00',
+                        date : '23/09/2020 00:00:00', // 
                         message : this.addMessage,
                         status : 'sent'
                     }
                     
                     this.contacts[index].messages.push(tmpObj);
 
-                    this.addMessage='';
-                }
-            },
+                    // metodo più rapido
+                    //this.contacts[index].messages.push({
+                    //    date : '23/09/2020 00:00:00', // dayjs().format('DD/MM/YYYY HH:mm:ss') +add libray.
+                    //    message : this.addMessage,
+                    //    status : 'sent'
+                    //});
 
-            receivedMessage : function(index) {
-                let tmpObj = {
-                    date : '23/09/2020 00:00:02',
-                    message : 'Ok',
-                    status : 'received'
+                    this.addMessage='';
+
+                    setTimeout(() => {
+                        let tmpObj = {
+                            date : '23/09/2020 00:00:02', 
+                            message : 'Ok',
+                            status : 'received'
+                        }
+                        this.contacts[index].messages.push(tmpObj);
+                    }, 2000);
                 }
-                this.contacts[index].messages.push(tmpObj);
-            }, 
-        },
+            }
+        }
     }
 );
