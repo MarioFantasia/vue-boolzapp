@@ -146,6 +146,7 @@
         width: 100%;
         padding: 9px;
         border: none;
+        outline: none;
     }
 
     .chats {

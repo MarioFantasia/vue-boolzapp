@@ -179,19 +179,20 @@ const app = new Vue (
             indexUser : 0,
 
             addMessage : '',
-            
+
+            searchChat : ''
         },
 
         methods : {
-            clickUser : function (index) {
+            clickUser : function(index) {
                 this.indexUser = index;
                 return this.indexUser;
             },
 
-            sendMessage : function (index) {
+            sendMessage : function(index) {
                 if(this.addMessage!='') {
                     let tmpObj = {
-                        date : '23/09/2020 00:00:00', // 
+                        date : '23/09/2020 00:00:00', 
                         message : this.addMessage,
                         status : 'sent'
                     }
@@ -216,7 +217,26 @@ const app = new Vue (
                         this.contacts[index].messages.push(tmpObj);
                     }, 2000);
                 }
+            },
+
+            questChat : function() {
+                if(this.searchChat!='') {
+                    this.contacts.forEach(
+                        (elm) => {
+                        if(!(elm.name.toUpperCase().includes(this.searchChat.toUpperCase()))) {
+                            elm.visible = false;
+                        } 
+                    });
+                } else if(this.searchChat=='') {
+                    this.contacts.forEach(
+                        (elm) => {
+                            elm.visible = true;
+                        }
+                    );
+                }
             }
         }
     }
 );
+
+

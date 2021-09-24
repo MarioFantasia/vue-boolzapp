@@ -14,3 +14,7 @@
 .bgc_select_chat {
     background-color: #e9ebeb;
 }
+
+.none {
+    display: none;
+}

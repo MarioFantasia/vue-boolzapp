@@ -57,13 +57,16 @@
                                 <i class="fas fa-search"></i>
                             </div>
                             <div class="search_input">
-                                <input type="text" name="" id="" placeholder="Cerca o inizia una nuova chat">
+                                <input type="text" name="" id="" placeholder="Cerca o inizia una nuova chat"
+                                v-model='searchChat'
+                                :onkeyup='questChat()'>
                             </div>
                         </div>
                     
                         <ul class="chats flex">
                             <li class="chat flex" v-for="(contact, index) in contacts" :key="index"
                                 :class="indexUser==index ? 'bgc_select_chat' : ''"
+                                v-show="contact.visible"
                                 @click = "clickUser(index)">
                                 <div class="contact_foto">
                                     <img :src="'img/avatar' + contact.avatar + '.jpg'" :alt="contact.name">
