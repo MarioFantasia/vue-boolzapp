@@ -1,6 +1,5 @@
 /* dayjs().format('DD/MM/YYYY HH:mm:ss')
- */
-
+*/
 
 //VueJs
 const app = new Vue (
@@ -229,14 +228,14 @@ const app = new Vue (
                             elm.visible = true;
                         }
                     });
-                }
-                if(this.searchChat=='') {
+                } else {
                     this.contacts.forEach(
                         (elm) => {
                             elm.visible = true;
                         }
                     );
-                } 
+                }
+                
             }
         }
     }
